@@ -5,7 +5,7 @@
   .intro {
 
     .main-header-img {
-      border-radius: 1.5%;
+      .picture-border-radius();
       width: 90%;
       display: flex;
       justify-content: center;
@@ -34,9 +34,9 @@
     img {
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
       height: 100%;
       margin-left: -.5%;
+      border-radius: 20px;
     }
   }
 
@@ -73,6 +73,12 @@
       }
 
       .btn {
+        .button-colors (white, @btn-bg-color);
+        .button-size (5%, 10%);
+        .button-width-radius (40%, 5px);
+        margin-left: -.5%;
+        font-size: 2rem;
+        text-align: center;
       }
     }
 
@@ -83,7 +89,7 @@
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        .picture-border-radius();
       }
     }
   }

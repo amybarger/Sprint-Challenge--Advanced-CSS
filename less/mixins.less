@@ -3,3 +3,26 @@
 .main-margin-left {
     margin-left: 5%;
 }
+
+.picture-border-radius {
+    border-radius: 5px;
+}
+
+.button-colors (@c, @bc) {
+    color: @c;
+    background-color: @bc;
+    &:hover {
+        color: @bc;
+        background-color: @c;
+    }
+}
+
+.button-size (@p, @m) {
+    padding: @p;
+    margin: @m;
+}
+
+.button-width-radius (@w, @br) {
+    width: @w;
+    border-radius: @br;
+}
