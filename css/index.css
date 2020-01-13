@@ -165,6 +165,8 @@ p {
   flex-direction: column;
   align-items: center;
   padding: 3%;
+  background: #f4f4f4;
+  margin-top: 2%;
 }
 .top-screen h1 {
   font-size: 3.5rem;
@@ -173,7 +175,7 @@ p {
   margin-top: 1.5%;
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 40%;
 }
 .top-screen nav a {
   text-decoration: none;
