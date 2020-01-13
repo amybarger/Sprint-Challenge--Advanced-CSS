@@ -4,12 +4,22 @@
 
   .intro {
 
+    .main-header-img {
+      .picture-border-radius();
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      margin-left: 5%;
+    }
+
     h2 {
       padding: 15px;
+      .main-margin-left();
     }
 
     p {
       padding:0 15px;
+      .main-margin-left();
     }
   
   }
@@ -18,17 +28,33 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    .main-margin-left();
+    margin-left: 8%;
+    @media @phone {
+      .blast {
+        width: 80%;
+        margin-left: 3%;
+      }
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
       height: 100%;
+      margin-left: -.5%;
+      border-radius: 20px;
     }
   }
 
   .visit-planets {
     padding: 15px;
+    .main-margin-left();
 
     h3 {
       margin-top: 11px;
@@ -45,9 +71,17 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    .main-margin-left();
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,17 +92,31 @@
       }
 
       .btn {
+        .button-colors (white, @btn-bg-color);
+        .button-size (5%, 10%);
+        .button-width-radius (40%, 5px);
+        margin-left: -.5%;
+        font-size: 2rem;
+        text-align: center;
+        @media @phone {
+          width: 100%;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width: 100%;
+        margin-bottom: 10%;
+        margin-left: -4%;
+      }
       
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        .picture-border-radius();
       }
     }
   }
